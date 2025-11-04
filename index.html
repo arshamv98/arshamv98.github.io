@@ -8,152 +8,161 @@
     <meta name="description" content="Arsham Vashisth - Machine Learning Engineer | YOLO, Python, XGBoost | RMIT AI MSc">
     <meta name="keywords" content="machine learning, computer vision, YOLO, Python, XGBoost, AI engineer, Melbourne">
     <style>
+        html { scroll-behavior: smooth; }               /* <-- NEW: smooth scroll */
         body { box-sizing: border-box; }
         .gradient-bg { background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); }
-        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+        .card-hover { transition: transform .3s ease, box-shadow .3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04); }
         .skill-bar { transition: width 1.5s ease-in-out; }
-        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-        .fade-in-up { animation: fadeInUp 0.6s ease-out; }
+        @keyframes fadeInUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+        .fade-in-up { animation: fadeInUp .6s ease-out; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-white shadow-md z-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <div class="text-2xl font-bold text-indigo-600">Arsham</div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-gray-600 hover:text-indigo-600 transition">Home</a>
-                    <a href="#about" class="text-gray-600 hover:text-indigo-600 transition">About</a>
-                    <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition">Projects</a>
-                    <a href="#skills" class="text-gray-600 hover:text-indigo-600 transition">Skills</a>
-                    <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition">Contact</a>
-                </div>
-                <button id="mobile-menu-btn" class="md:hidden">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
+
+<!-- ==================== NAVIGATION ==================== -->
+<nav class="fixed top-0 w-full bg-white shadow-md z-50">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+            <div class="text-2xl font-bold text-indigo-600">Arsham</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-indigo-600 transition">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition">About</a>
+                <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition">Projects</a>
+                <a href="#skills" class="text-gray-600 hover:text-indigo-600 transition">Skills</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition">Contact</a>
             </div>
-            <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <a href="#home" class="block py-2 text-gray-600 hover:text-indigo-600">Home</a>
-                <a href="#about" class="block py-2 text-gray-600 hover:text-indigo-600">About</a>
-                <a href="#projects" class="block py-2 text-gray-600 hover:text-indigo-600">Projects</a>
-                <a href="#skills" class="block py-2 text-gray-600 hover:text-indigo-600">Skills</a>
-                <a href="#contact" class="block py-2 text-gray-600 hover:text-indigo-600">Contact</a>
+            <button id="mobile-menu-btn" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+            <a href="#home" class="block py-2 text-gray-600 hover:text-indigo-600">Home</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-indigo-600">About</a>
+            <a href="#projects" class="block py-2 text-gray-600 hover:text-indigo-600">Projects</a>
+            <a href="#skills" class="block py-2 text-gray-600 hover:text-indigo-600">Skills</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-indigo-600">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<section id="home" class="gradient-bg text-white min-h-screen flex items-center pt-16">
+    … (unchanged – same hero you already have) …
+</section>
+
+<!-- ==================== ABOUT ==================== -->
+<section id="about" class="py-20 bg-white">
+    … (unchanged – same about you already have) …
+</section>
+
+<!-- ==================== PROJECTS ==================== -->
+<section id="projects" class="py-20 bg-gray-50">
+    … (unchanged – your three projects) …
+</section>
+
+<!-- ==================== SKILLS ==================== -->
+<section id="skills" class="py-20 bg-white">
+    … (unchanged – skill bars) …
+</section>
+
+<!-- ==================== CONTACT (RESTORED) ==================== -->
+<section id="contact" class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
+            <div class="w-20 h-1 bg-indigo-600 mx-auto mb-4"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto">Open to ML Engineer, Computer Vision, or Data Science roles in Melbourne or remote.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- LEFT – Contact Info -->
+            <div>
+                <h3 class="text-2xl font-bold mb-6">Contact Info</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        </div>
+                        <div><div class="font-semibold">Email</div><div class="text-gray-600">arshamv@gmail.com</div></div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                        </div>
+                        <div><div class="font-semibold">Phone</div><div class="text-gray-600">0422209961</div></div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <div><div class="font-semibold">Location</div><div class="text-gray-600">Melbourne, VIC</div></div>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/in/arsham-vashisth" target="_blank" class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center text-white hover:bg-blue-900">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://github.com/arshamv98" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-gray-900">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT – Contact Form -->
+            <div>
+                <form id="contact-form" class="space-y-6">
+                    <div><label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label><input type="text" id="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"></div>
+                    <div><label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label><input type="email" id="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"></div>
+                    <div><label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label><input type="text" id="subject" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"></div>
+                    <div><label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label><textarea id="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"></textarea></div>
+                    <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700">Send Message</button>
+                </form>
+                <div id="form-message" class="mt-4 p-4 rounded-lg hidden"></div>
             </div>
         </div>
-    </nav>
+    </div>
+</section>
 
-    <!-- Hero Section -->
-    <section id="home" class="gradient-bg text-white min-h-screen flex items-center pt-16">
-        <div class="max-w-6xl mx-auto px-4 py-20">
-            <div class="text-center fade-in-up">
-                <div class="w-32 h-32 bg-white rounded-full mx-auto mb-8 flex items-center justify-center shadow-xl">
-                    <svg class="w-16 h-16 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.5 3a3.5 3.5 0 100 7 3.5 3.5 0 000-7zM2 9.5a3.5 3.5 0 117 0 3.5 3.5 0 01-7 0zm13 0a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0z"></path>
-                    </svg>
-                </div>
-                <h1 class="text-5xl md:text-6xl font-bold mb-4">Arsham Vashisth</h1>
-                <p class="text-xl md:text-2xl mb-6 text-indigo-100">Machine Learning Engineer</p>
-                <p class="text-lg mb-10 max-w-2xl mx-auto text-indigo-50">
-                    Passionate about building real-time AI systems using YOLO, Python, and cloud tools. 
-                    Currently deploying computer vision models at <strong>Silverpond</strong>.
-                </p>
-                <div class="space-x-4">
-                    <a href="#projects" class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold hover:bg-indigo-50 transition">
-                        View Projects
-                    </a>
-                    <a href="https://github.com/arshamv98" target="_blank" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-indigo-600 transition">
-                        GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ==================== FOOTER ==================== -->
+<footer class="bg-gray-800 text-white py-8">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+        <p>&copy; 2025 Arsham Vashisth. All rights reserved.</p>
+        <p class="text-gray-400 mt-2">Built with AI, deployed with passion.</p>
+    </div>
+</footer>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">About Me</h2>
-                <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="order-2 md:order-1">
-                    <h3 class="text-2xl font-bold mb-6">AI Engineer | RMIT MSc '23</h3>
-                    <p class="text-gray-600 mb-4 leading-relaxed">
-                        Master of Artificial Intelligence from <strong>RMIT Melbourne</strong> with hands-on experience in 
-                        <strong>computer vision, data pipelines, and model deployment</strong>.
-                    </p>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Currently a <strong>Machine Learning Engineer Intern at Silverpond</strong>, training and deploying 
-                        YOLO-based semantic segmentation models. Previously built real-time chicken behavior analysis and 
-                        skincare recommendation systems.
-                    </p>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="text-center p-4 bg-indigo-50 rounded-lg">
-                            <div class="text-2xl font-bold text-indigo-600">4+</div>
-                            <div class="text-gray-600">ML Projects</div>
-                        </div>
-                        <div class="text-center p-4 bg-purple-50 rounded-lg">
-                            <div class="text-2xl font-bold text-purple-600">6</div>
-                            <div class="text-gray-600">Tech Stack Tools</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="order-1 md:order-2">
-                    <div class="w-64 h-64 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full mx-auto mb-8 flex items-center justify-center shadow-2xl">
-                        <svg class="w-32 h-32 text-white" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ==================== SCRIPTS ==================== -->
+<script>
+    // Mobile menu
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">Featured Projects</h2>
-                <div class="w-20 h-1 bg-indigo-600 mx-auto mb-4"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">Real-world ML applications in computer vision and data science</p>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    // Contact form (fake submit)
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const name = this.name.value;
+        const msg = document.getElementById('form-message');
+        msg.className = 'mt-4 p-4 rounded-lg bg-green-100 text-green-700';
+        msg.textContent = `Thanks, ${name}! I'll reply soon.`;
+        msg.classList.remove('hidden');
+        this.reset();
+        setTimeout(() => msg.classList.add('hidden'), 5000);
+    });
 
-                <!-- Project 1: Chicken Behavior -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
-                    <div class="h-48 bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
-                        <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
-                        </svg>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Real-Time Chicken Behavior Analysis</h3>
-                        <p class="text-gray-600 mb-4">YOLOv7 model detecting chicken beaks and classifying states (open/closed) from CCTV.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-sm">YOLOv7</span>
-                            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">Python</span>
-                            <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">OpenCV</span>
-                        </div>
-                        <div class="flex space-x-4">
-                            <a href="https://github.com/arshamv98/chicken-behavior-analysis" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-semibold">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: Skincare -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
-                    <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
-                        <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.8.4l-1.6 2.4A2 2 0 002 12v4a2 2 0 002 2h12a2 2 0 002-2v-4a2 2 0 00-.6-1.4l-1.6-2.4a1 1 0 00-.8-.4h-1V6a4 4 0 00-4-4zm0 3a1 1 0 011 1v1H9V6a1 1 0 011-1zm-3 6a1 1 0 100 2 1 1 0 000-2zm7 0a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Skincare Recommendation System</h3>
-                        <p class="text-gray-600 mb-4">Data cleaning pipeline with regex, preprocessing 10K+ records for ML modeling.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-pink-100
+    // Skill-bar animation on scroll
+    const observer = new IntersectionObserver(es => es.forEach(e => {
+        if (e.isIntersecting) e.target.querySelectorAll('.skill-bar').forEach(b => b.style.width = b.style.width);
+    }), { threshold: 0.5 });
+    const skills = document.getElementById('skills');
+    skills && observer.observe(skills);
+</script>
+</body>
+</html>
