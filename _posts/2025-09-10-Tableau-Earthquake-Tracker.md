@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Global Earthquake Tracking Dashboard (Tableau)
-image: "/img/posts/eq%20img.png"
+image: "/img/posts/eq img.png"
 tags: [Tableau, Data Visualization, Geospatial Analysis]
 ---
 
