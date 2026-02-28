@@ -9,7 +9,7 @@ plugins:
 #-------------------------------
 # General Site Settings
 title: Arsham Vashisth
-description: "Hi I'm Arsham, and I'm a Data Scientist.  My portfolio focuses on interesting projects I've recently undertaken, with a strong emphasis on business impact. Please visit my Github & LinkedIn pages (or download my Resume) by using the links below!"
+description: "A data enthusiast with a strong interest in Machine Learning and analytics. I enjoy using data to solve real world problems and support better decision making. This portfolio showcases a selection of my projects, each focused on creating practical and meaningful impact. Feel free to explore my work, visit my GitHub and LinkedIn, or download my resume below."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -51,6 +51,7 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
 
 
 
