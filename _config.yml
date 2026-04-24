@@ -22,8 +22,8 @@ avatar_image: /img/pfolio img.png
 
 #-------------------------------
 # Contact links
-linkedln: "https://linkedln.com/#" # Add your linkedln handle
-github: "https://github.com/#"  # Add your github handle
+linkedln: "https://www.linkedin.com/in/arsham-vashisth/" # Add your linkedln handle
+github: "https://github.com/arshamv98"  # Add your github handle
 
 paginate: 6
 paginate_path: "/page/:num"
