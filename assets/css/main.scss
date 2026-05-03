@@ -1,0 +1,41 @@
+---
+
+---
+
+/* Load the theme’s base styles FIRST */
+@import "jekyll-theme-primer";
+
+/* NOW your overrides */
+
+/* GLOBAL */
+body {
+background: #0f172a;
+color: #e2e8f0;
+}
+
+/* HERO */
+.hero {
+text-align: center;
+padding: 80px 20px;
+background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+.hero h1 {
+font-size: 48px;
+}
+
+.hero p {
+color: #94a3b8;
+}
+
+/* IMPROVE EXISTING CARDS */
+.post-card {
+background: #1e293b !important;
+border-radius: 16px !important;
+border: 1px solid #334155 !important;
+transition: 0.3s;
+}
+
+.post-card:hover {
+transform: translateY(-5px);
+}
