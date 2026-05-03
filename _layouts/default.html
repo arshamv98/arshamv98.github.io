@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="{{ '/' | relative_url }}">AV_98</a>
+    <ul class="nav-links">
+      <li><a href="{{ '/#projects' | relative_url }}">Projects</a></li>
+      <li><a href="{{ '/#about' | relative_url }}">About</a></li>
+      <li><a href="{{ '/#contact' | relative_url }}">Contact</a></li>
+      <li><a href="{{ site.resume_url | relative_url }}" target="_blank">Résumé ↗</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-name">{{ site.title }} — Melbourne, AU</span>
+    <span class="footer-copy">Data Science Portfolio © {{ 'now' | date: "%Y" }}</span>
+  </footer>
+
+</body>
+</html>
