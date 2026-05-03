@@ -1,41 +1,54 @@
-# Remote theme directory
-remote_theme: analytics-link/analytics-link.github.io
+# ----------------------------------------
+# ARSHAM VASHISTH — PORTFOLIO CONFIG
+# ----------------------------------------
 
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-remote-theme
-
-#-------------------------------
-# General Site Settings
 title: Arsham Vashisth
-description: "A data enthusiast with a strong interest in Machine Learning and analytics. I enjoy using data to solve real world problems and support better decision making. This portfolio showcases a selection of my projects, each focused on creating practical and meaningful impact. Feel free to explore my work, visit my GitHub and LinkedIn, or download my resume below."
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://arshamv98.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+description: "A data enthusiast with a strong interest in Machine Learning and analytics. I enjoy using data to solve real world problems and support better decision making. This portfolio showcases a selection of my projects, each focused on creating practical and meaningful impact."
+baseurl: ""
+url: "https://arshamv98.github.io"
 
-#-------------------------------
-# About Section
-subtitle: Data Science <span style="color:#f58506"> Portfolio </span>
+# ----------------------------------------
+# About / Profile
+# ----------------------------------------
+subtitle: "Data Science Portfolio"
 location: "Melbourne, AU"
 resume_url: /docs/My_Resume.pdf
 avatar_image: /img/pfolio img.png
 
-#-------------------------------
+# ----------------------------------------
+# Contact Links
+# ----------------------------------------
+linkedln: "https://www.linkedin.com/in/arsham-vashisth/"
+github:   "https://github.com/arshamv98"
+
+# ----------------------------------------
 # Open Graph
-og_image: /img/thumbnail.png"
+# ----------------------------------------
+og_image: /img/thumbnail.png
 
-#-------------------------------
-# Contact links
-linkedln: "https://www.linkedin.com/in/arsham-vashisth/" # Add your linkedln handle
-github: "https://github.com/arshamv98"  # Add your github handle
+# ----------------------------------------
+# Plugins
+# ----------------------------------------
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
 
+# ----------------------------------------
+# Pagination
+# ----------------------------------------
 paginate: 6
 paginate_path: "/page/:num"
 
+# ----------------------------------------
+# Sass
+# ----------------------------------------
 sass:
   sass_dir: _sass
-  style: compressed # possible values: nested expanded compact compressed
+  style: compressed
 
+# ----------------------------------------
+# Post defaults
+# ----------------------------------------
 defaults:
   - scope:
       type: posts
@@ -44,19 +57,10 @@ defaults:
       read_time: true
       share: false
 
-
-#-------------------------------
-# Exclude from processing.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-
-
-
-
+# ----------------------------------------
+# Exclude from build
+# ----------------------------------------
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
