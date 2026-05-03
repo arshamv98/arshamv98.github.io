@@ -2,87 +2,20 @@
 
 ## layout: default
 
-<link rel="stylesheet" href="/assets/css/custom.css">
-
-<div class="home-container">
-
-  <!-- HERO -->
-
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Arsham Vashisth</h1>
-      <p class="hero-subtitle">Machine Learning • Data Science • Analytics</p>
-      <p class="hero-desc">
-        I build data-driven solutions to solve real-world business problems using Machine Learning.
-      </p>
-
-```
-  <div class="hero-buttons">
-    <a href="{{ site.resume_url }}" class="btn">Download Resume</a>
-    <a href="{{ site.github }}" class="btn-outline">GitHub</a>
-  </div>
+<div class="hero">
+  <h1>Arsham Vashisth</h1>
+  <p>Machine Learning • Data Science • Analytics</p>
 </div>
-```
 
-  </section>
-
-  <!-- FEATURED PROJECTS -->
-
-  <section>
-    <h2>🚀 Featured Projects</h2>
-    <div class="project-grid">
-
-```
-  {% assign posts = site.posts | reverse %}
-  {% for post in posts limit:3 %}
-  <div class="project-card">
-    <a href="{{ post.url }}">
-      {% if post.image %}
-      <img src="{{ post.image }}" alt="{{ post.title }}">
-      {% endif %}
-      <h3>{{ post.title }}</h3>
-      <p>{{ post.excerpt | strip_html | truncate: 100 }}</p>
-    </a>
-  </div>
-  {% endfor %}
-
-</div>
-```
-
-  </section>
-
-  <!-- ALL PROJECTS -->
-
-  <section>
-    <h2>📊 All Projects</h2>
-    <div class="project-grid">
-
-```
-  {% for post in posts offset:3 %}
-  <div class="project-card small">
-    <a href="{{ post.url }}">
-      <h3>{{ post.title }}</h3>
-    </a>
-  </div>
-  {% endfor %}
-
-</div>
-```
-
-  </section>
-
-  <!-- SKILLS -->
-
-  <section>
-    <h2>🧠 Tech Stack</h2>
-    <div class="skills-grid">
-      <span>Python</span>
-      <span>Machine Learning</span>
-      <span>Pandas</span>
-      <span>Scikit-learn</span>
-      <span>SQL</span>
-      <span>Data Visualisation</span>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-t-12">
+            <div class="row">
+                {% for post in paginator.posts %}
+                    {% include post-card.html %}
+                {% endfor %}
+            </div>
+            {% include pagination.html %}
+        </div>
     </div>
-  </section>
-
 </div>
