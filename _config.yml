@@ -21,7 +21,7 @@ avatar_image: /img/pfolio img.png
 
 #-------------------------------
 # Open Graph
-image: /img/thumbnail.png
+image: https://arshamv98.github.io/img/thumbnail.png
 
 #-------------------------------
 # Contact links
