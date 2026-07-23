@@ -126,15 +126,6 @@
         }
       }
     }
-    .item-resume .item-link {
-      background: $primary-color;
-      border-color: $primary-color;
-      color: $white;
-      box-shadow: 0 6px 16px rgba($primary-color, .35);
-      &:hover {
-        background: darken($primary-color, 10%);
-      }
-    }
   }
 }
 
