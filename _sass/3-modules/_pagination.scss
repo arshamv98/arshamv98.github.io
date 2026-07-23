@@ -1,0 +1,43 @@
+// Pagination
+.pagination {
+  margin: 20px 0 40px;
+  .pagination-list {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    .older-posts, .previous-posts, .newer-posts {
+      display: inline-block;
+      flex-grow: 1;
+      .older-link, .previous-link, .newer-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 30px;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600;
+        color: $text;
+        background: $lighten-black;
+        border: 1px solid $border-color;
+        border-radius: $global-radius;
+        transition: $global-transition;
+        &:hover {
+          background: $primary-color;
+          color: $white;
+          border-color: $primary-color;
+          transform: translateY(-2px);
+        }
+      }
+    }
+    .older-link {
+      i { margin-left: 10px; }
+    }
+    .previous-link, .newer-link {
+      i { margin-right: 10px; }
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    margin: 20px 0;
+  }
+}

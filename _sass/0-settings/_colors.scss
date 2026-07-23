@@ -1,0 +1,53 @@
+// Main Colors — Modern palette
+$primary-color: #6C5CE7;      // vivid indigo/violet accent — used for links, tags, buttons
+$secondary-color: #00CEC9;    // teal, used sparingly for contrast
+$highlight: #FFD166;
+$text: #E5E7EB;               // main body text (off-white)
+$gray-blue: #94A3B8;
+$white: #ffffff;
+$light-white: #CBD5E1;
+$black: #0B0F19;               // deep near-black, used for header/footer bands
+$lighten-black: #161B26;       // card background
+$blue-black: #111827;
+$blue-darken: #0D1117;
+$green-darken: #16241f;
+$danger: #EF4444;
+$success: #22C55E;
+
+// Background Colors
+$background: #0B0F19;          // page background
+
+// Body Color
+$body-color: $text;
+
+// Headings
+$heading-font-color: #F8FAFC;
+
+// Links
+$link-color: $primary-color;
+$link-color-hover: lighten($link-color, 15%);
+
+// Button
+$button-color: $white;
+$button-background-color: $primary-color;
+
+// Border
+$border-color: #232B3A;
+
+/* syntax highlighting (base16) — unchanged from theme default */
+$base00: #263238 !default;
+$base01: #2e3c43 !default;
+$base02: #314549 !default;
+$base03: #546e7a !default;
+$base04: #b2ccd6 !default;
+$base05: #eeffff !default;
+$base06: #eeffff !default;
+$base07: #ffffff !default;
+$base08: #f07178 !default;
+$base09: #f78c6c !default;
+$base0a: #ffcb6b !default;
+$base0b: #c3e88d !default;
+$base0c: #89ddff !default;
+$base0d: #82aaff !default;
+$base0e: #c792ea !default;
+$base0f: #ff5370 !default;

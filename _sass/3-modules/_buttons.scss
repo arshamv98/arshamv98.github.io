@@ -1,0 +1,30 @@
+.button {
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+  font: inherit;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 28px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: $global-transition;
+
+  &--primary {
+    color: $button-color;
+    background-color: $button-background-color;
+    box-shadow: 0 6px 16px rgba($primary-color, .35);
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+      color: $white;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px rgba($primary-color, .45);
+    }
+  }
+
+  &--big {
+    display: block;
+    width: 100%;
+  }
+}

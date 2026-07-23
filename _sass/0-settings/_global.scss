@@ -1,0 +1,13 @@
+// Spaces
+$base-spacing-unit: 15px;
+
+// Border radius — bumped up for a modern rounded look (theme default was 3px)
+$global-radius: 14px;
+
+// Transition
+$global-transition: .3s ease;
+
+// Syntax highlighing
+$monospace: Monaco, Consolas, "Lucida Console", monospace !default;
+$type-size: 0.75em !default;
+$border-radius: 4px !default;
